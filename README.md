@@ -1,2 +1,2 @@
 # taxsale
-bootstrap project for ntdata
+bootstrap project (html5, css3, js, jquery)
