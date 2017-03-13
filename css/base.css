@@ -1,0 +1,29 @@
+@font-face{font-family:'ClearSans';src:url(../fonts/clearsans-1.00/TTF/ClearSans-Regular.ttf);}
+@font-face{font-family:'ClearSans-Thin';src:url(../fonts/clearsans-1.00/TTF/ClearSans-Thin.ttf);}
+@font-face{font-family:'ClearSans-Light';src:url(../fonts/clearsans-1.00/TTF/ClearSans-Light.ttf);}
+@font-face{font-family:'ClearSans-Bold';src:url(../fonts/clearsans-1.00/TTF/ClearSans-Bold.ttf);}
+html,
+body{font-family:'Roboto', sans-serif;}
+a{cursor:pointer;}
+.custom-green{background:#72c912 !important;}
+.custom-green-text{color:#72c912 !important;}
+.custom-red{background:#d0021b !important;}
+.custom-red-text{color:#d0021b !important;}
+.custom-orange{background:#f6a623 !important;}
+.custom-grey-light{background:#e6ecf3 !important;}
+.custom-grey{background:#b5b5b5 !important;}
+.custom-grey-medium{background:rgba(0, 0, 0, 0.2) !important;}
+.btn{position:relative;}
+.btn-group>.btn-group:not(:first-child):not(:last-child)>.btn{border-radius:0 3px 3px 0;}
+.btn img.caret-icon{position:absolute;right:8px;top:10px;}
+.btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn, .btn-group .btn-group+.btn-group{margin-left:0;}
+.opacity05{opacity:0.5;}
+.no-pad{padding:0 !important;}
+.no-pad-top{padding-top:0 !important;}
+.no-pad-bot{padding-bottom:0 !important;}
+.no-pad-l{padding-left:0 !important;}
+.no-pad-r{padding-right:0 !important;}
+.mar-r-15{margin-right:15px;}
+.mar-l-15{margin-left:15px;}
+.for-custom-container-only{display:none;}
+.row-flex{display:flex;flex-flow:row wrap;}

@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tax Sale Property Viewer</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+<div class="container custom-width">
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+            <a class="btn-prev" href="#"><span class="icon-previous"></span></a>
+            <a class="logo" href="index.html">
+                <img class="visible-lg-inline-block visible-md-inline-block" src="img/logo2_170x22.png" alt="Tax Sale Property Viewer">
+                <img class="hidden-lg hidden-md" src="img/logo-mobile.png" alt="Tax Sale Property Viewer">
+            </a>
+            <span class="description visible-lg-inline-block visible-md-inline-block">IN / Miami / Due 2016-10-01</span>
+            <a class="settings visible-lg-inline-block visible-md-inline-block"  data-toggle="modal" data-target="#modal1"><img class="settings-btt" src="img/settings-btt.png"></a>
+
+            <!-- Modal 1 'List settings' -->
+            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <a class="btn circle-close" data-dismiss="modal"><img class="" src="img/circle-close.svg"  onerror="this.onerror=null; this.src='circle-close.png'" ></a>
+                            <h4 class="modal-title" id="myModalLabel"><img class="setting-cog" src="img/setting-cog_24.svg"  onerror="this.onerror=null; this.src='setting-cog_24.png'" >List settings</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h6>RESTORE the list to defaults</h6>
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean ac consectetur ex. Vestibulum hendrerit fermentum condimentum.
+                            </p>
+                        </div>
+                        <div class="modal-footer text-right">
+                            <a href="#" class="attention">Attention! This action cannot be undone</a>
+                            <a href="#" class="btn btn-grey">Restore</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Modal 1 End  -->
+
+            <div class="switch">
+                <span class="counter">7254 <span class="opacity05">/ 8332</span></span>
+                <a class="go" href="#">GO</a>
+                <a class="btn-prev custom-green"><span class="icon-previous"></span></a>
+                <a class="btn-next custom-green"><span class="icon-next"></span></a>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 no-pad-l no-pad-r">
+            <a class="filters custom-green"  data-toggle="modal" data-target="#modal2">Set filters</a>
+
+            <!-- Modal 2 'Filter' -->
+            <div class="modal fade" id="modal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content filters">
+            <form>
+            <div class="modal-header">
+                <a class="btn circle-close" data-dismiss="modal"><img class="" src="img/circle-close.svg"  onerror="this.onerror=null; this.src='circle-close.png'" ></a>
+                <h4 class="modal-title"><img class="filter" src="img/filter-icon.svg"  onerror="this.onerror=null; this.src='filter-icon.png'" >Filter</h4>
+                <span>Parcels filtered: <b>445 of 8332</b></span>
+            </div>
+            <div class="modal-body">
+            <div class="row property">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <h6>Property type</h6>
+
+
+                    <div class="checkbox checkbox-custom">
+                        <input type="checkbox" name="checbox11" id="checkbox11" value="option">
+                        <label for="checkbox11">
+                            Vacant land
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-custom">
+                        <input type="checkbox" name="checkbox12" id="checkbox12" value="option">
+                        <label for="checkbox12">
+                            Residential
+                        </label>
+                    </div>
+
+                    <div class="checkbox checkbox-custom">
+                        <input type="checkbox" name="checkbox13" id="checkbox13" value="option">
+                        <label for="checkbox13">
+                            Commercial
+                        </label>
+                    </div>
+
+                    <div class="checkbox checkbox-custom">
+                        <input type="checkbox" name="checkbox14" id="checkbox14" value="option">
+                        <label for="checkbox14">
+                            Industrial
+                        </label>
+                    </div>
+
+                    <div class="checkbox checkbox-custom">
+                        <input type="checkbox" name="checkbox15" id="checkbox15" value="option">
+                        <label for="checkbox15">
+                            Miscellaneous
+                        </label>
+                    </div>
+
+
+                    <h6>Parcel status</h6>
+
+                    <div class="checkbox checkbox-custom">
+                        <input type="checkbox" name="checkbox16" id="checkbox16" value="option">
+                        <label for="checkbox16">
+                            Marked as "Bid"
+                        </label>
+                    </div>
+
+                    <div class="checkbox checkbox-custom">
+                        <input type="checkbox" name="checkbox17" id="checkbox17" value="option">
+                        <label for="checkbox17">
+                            Marked as "Removed"
+                        </label>
+                    </div>
+
+                    <div class="checkbox checkbox-custom">
+                        <input type="checkbox" name="checkbox18" id="checkbox18" value="option">
+                        <label for="checkbox18">
+                            Unrewieved
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="parameters col-lg-6 col-md-6 col-sm-6 col-xs-6 no-pad-r">
+
+                    <h6>Property parameters</h6>
+
+                    <div class="row parameter">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 no-pad-r">
+                            Vacant land above
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-pad">
+                            <input class="qty" type="text" placeholder="0">
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            Acres
+                        </div>
+                    </div>
+
+                    <div class="row parameter long-text">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 no-pad-r">
+                            Building sqaure footage above
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-pad">
+                            <input class="qty" type="text" placeholder="0">
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            Ft&#178;
+                        </div>
+                    </div>
+
+                    <div class="row parameter">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 no-pad-r">
+                            Minimum bid
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-pad">
+                            <input class="qty" type="text" placeholder="2000">
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            $
+                        </div>
+                    </div>
+
+                    <div class="row parameter">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 no-pad-r">
+                            Maximum bid
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-pad">
+                            <input class="qty" type="text" placeholder="0">
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            $
+                        </div>
+                    </div>
+
+                    <div class="row parameter long-text">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 no-pad-r">
+                            Assessed value more than
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-pad">
+                            <input class="qty" type="text" placeholder="0">
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            $
+                        </div>
+                    </div>
+
+                    <div class="row parameter long-text">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 no-pad-r">
+                            Assessed value less than
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-pad">
+                            <input class="qty" type="text" placeholder="0">
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
+                            $
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="white">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <span class="zip-code">Include Zip code</span>
+
+                    <div class="details">
+
+                        <div class="btn-group btn-group2 pull-right">
+                            <button type="button" class="btn btn-default dropdown-toggle dropdown-toggle2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                46360
+                                <img class="caret-icon" src="img/caret.svg" onerror="this.onerror=null; this.src='caret.png'" alt="">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu2">
+                                <li><a href="#">46360</a></li>
+                                <li><a href="#">zipcode 2</a></li>
+                                <li><a href="#">zipcode 3</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 no-pad-l">
+                    <span class="zip-code">Exclude Zip code</span>
+
+                    <div class="details">
+
+                        <div class="btn-group btn-group3 pull-right">
+                            <button type="button" class="btn btn-default dropdown-toggle dropdown-toggle3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                --
+                                <img class="caret-icon" src="img/caret.svg" onerror="this.onerror=null; this.src='caret.png'" alt="">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu3">
+                                <li><a href="#">--</a></li>
+                                <li><a href="#">zipcode 2</a></li>
+                                <li><a href="#">zipcode 3</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row checkbox checkbox-custom">
+                <input type="checkbox" name="checbox1" id="checkbox1" value="option">
+                <label for="checkbox1">
+                    Do not include parcels with any of the values above is blank
+                </label>
+            </div>
+
+
+            </div>
+            <div class="modal-footer custom-grey">
+                <a href="#" class="white-text pull-left">Hide all filtered out properties from the list</a>
+                <a href="#" class="white-text">View unfiltered</a>
+                <a href="#" class="btn btn-grey pull-right">Apply filter</a>
+            </div>
+            </form>
+            </div>
+            </div>
+            </div><!-- Modal 2 End -->
+
+
+
+            <form class="visible-lg-inline-block visible-md-inline-block">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search by APN">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </form>
+
+            <a href="#" class="white-search hidden-lg hidden-md"><i class="fa fa-search" aria-hidden="true"></i></a>
+
+
+
+            <div class="user circle pull-right">
+                <img class="circle" src="img/user-photo_40.jpg"
+                     onerror="this.onerror=null; this.src='user-photo_40.png'" alt="user">
+            </div>
+        </div>
+    </div>
+</div>
+</header><!-- HEADER End -->
+
+<!-- CONTENT BLOCK -->
+<section class="main-content">
+    <div class="container custom-width">
+        <div class="row">
+
+    <!-- MAIN -->
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <div class="row filters">
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+
+                <div class="btn-group" role="group" aria-label="">
+                    <button type="button" class="btn icon-part custom-red">
+                        <img class="add transformed" src="img/add-icon.svg" onerror="this.onerror=null; this.src='add-icon.png'" alt="+">
+                    </button>
+
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn custom-red long-btn"  data-toggle="modal" data-target="#modal4">Remove from bid list</button>
+                    </div>
+
+
+                </div>
+
+                <div class="btn-group pull-right" role="group" aria-label="">
+                    <button type="button" class="btn icon-part custom-red">
+                        <img class="remove" src="img/eye.svg" onerror="this.onerror=null; this.src='add-eye.png'" alt="remove">
+                    </button>
+
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn custom-red"  data-toggle="modal" data-target="#modal4">REMOVE parcel</button>
+                    </div>
+
+
+                    <!-- Modal 4 'Remove these properties' -->
+
+                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content filters add-remove">
+                    <form>
+                    <div class="modal-header">
+                        <a class="btn circle-close" data-dismiss="modal"><img class="" src="img/circle-close.svg"  onerror="this.onerror=null; this.src='circle-close.png'" ></a>
+                        <h4 class="modal-title custom-red-text"><img class="filter" src="img/eye-red.svg"  onerror="this.onerror=null; this.src='eye-red.png'" >Remove these properties</h4>
+                        <p>To keep you focused on the properties of your interest you can specify  the ones you want to be removed from the viewer.</p>
+                    </div>
+
+                    <div class="white no-pad-top">
+
+                        <div class="row optional">
+                            <h6>optional: Apply to these areas only</h6>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+
+                                <span class="zip-code">Zip code(s)</span>
+
+                                <div class="optional details pull-right">
+                                    <div class="btn-group btn-group7 pull-right">
+                                        <button type="button" class="btn btn-default dropdown-toggle dropdown-toggle7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            --
+                                            <img class="caret-icon" src="img/caret.svg" onerror="this.onerror=null; this.src='caret.png'" alt="">
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu7">
+                                            <li><a href="#">--</a></li>
+                                            <li><a href="#">zipcode 2</a></li>
+                                            <li><a href="#">zipcode 3</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <span class="zip-code">City(s)</span>
+
+                                <div class="optional details pull-right">
+                                    <div class="btn-group btn-group8 pull-right">
+                                        <button type="button" class="btn btn-default dropdown-toggle dropdown-toggle8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            --
+                                            <img class="caret-icon" src="img/caret.svg" onerror="this.onerror=null; this.src='caret.png'" alt="">
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu8">
+                                            <li><a href="#">--</a></li>
+                                            <li><a href="#">city 2</a></li>
+                                            <li><a href="#">city 3</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal-body">
+                    <div class="row property">
+
+                    <!-- 1 -->
+                    <div class="row with-border">
+
+                        <div class="parameters col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="row parameter  long-text">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 no-pad-l">
+                                    Property type
+                                </div>
+
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+
+                                    <div class="optional details pull-right">
+                                        <div class="btn-group btn-group9 pull-right">
+                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-toggle9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Vacant land
+                                                <img class="caret-icon" src="img/caret.svg" onerror="this.onerror=null; this.src='caret.png'" alt="">
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu9">
+                                                <li><a href="#">Vacant Land</a></li>
+                                                <li><a href="#">item 2</a></li>
+                                                <li><a href="#">item 3</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="parameters col-lg-6 col-md-6 col-sm-6 col-xs-6">
+
+                            <div class="row parameter  long-text">
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                    Vacant  land over
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 no-pad-l">
+                                    <input class="qty" type="text" placeholder="0">
+                                </div>
+
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-pad-l">
+                                    $
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 2 -->
+
+                    <div class="row with-border">
+                        <div class="parameters col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="row parameter  long-text">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 no-pad-l">
+                                    Minimum bid over
+                                </div>
+
+
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 no-pad-l">
+                                    <input class="qty" type="text" placeholder="2000">
+                                </div>
+
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-pad-l">
+                                    $
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="parameters col-lg-6 col-md-6 col-sm-6 col-xs-6">
+
+                            <div class="row parameter  long-text">
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                    Maximum  bid under
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 no-pad-l">
+                                    <input class="qty" type="text" placeholder="0">
+                                </div>
+
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-pad-l">
+                                    $
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- 3 -->
+
+                    <div class="row with-border">
+                        <div class="parameters col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="row parameter  long-text">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 no-pad-l">
+                                    Building  size over
+                                </div>
+
+
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 no-pad-l">
+                                    <input class="qty" type="text" placeholder="0">
+                                </div>
+
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-pad-l">
+                                    Sf
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="parameters col-lg-6 col-md-6 col-sm-6 col-xs-6">
+
+                            <div class="row parameter  long-text">
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                    Building  size under
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 no-pad-l">
+                                    <input class="qty" type="text" placeholder="0">
+                                </div>
+
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-pad-l">
+                                    Sf
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row mortgage with-border">
+
+                        <div class="col-xs-6 no-pad-l">
+                            <div class="checkbox checkbox-custom">
+                                <input type="checkbox" name="withMortgage" id="withMortgage2" value="option">
+                                <label for="withMortgage2">
+                                    Properties with mortgage amount reported
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-5">
+                            <div class="checkbox checkbox-custom">
+                                <input type="checkbox" name="withMortgage" id="noMortgage2" value="option">
+                                <label for="noMortgage2">
+                                    Properties with no mortgage reported
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row optional bottom-optional">
+
+                        <div class="col-xs-6 no-pad-r">
+
+                            <span class="zip-code">Zip code(s)</span>
+
+                            <div class="optional details pull-right">
+                                <div class="btn-group btn-group10 pull-right">
+                                    <button type="button" class="btn btn-default dropdown-toggle dropdown-toggle10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        --
+                                        <img class="caret-icon" src="img/caret.svg" onerror="this.onerror=null; this.src='caret.png'" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu10">
+                                        <li><a href="#">--</a></li>
+                                        <li><a href="#">zipcode 2</a></li>
+                                        <li><a href="#">zipcode 3</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-6 no-pad-r">
+                            <span class="zip-code mar-l-15">City(s)</span>
+
+                            <div class="optional details pull-right">
+                                <div class="btn-group btn-group11 pull-right">
+                                    <button type="button" class="btn btn-default dropdown-toggle dropdown-toggle11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        --
+                                        <img class="caret-icon" src="img/caret.svg" onerror="this.onerror=null; this.src='caret.png'" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu11">
+                                        <li><a href="#">--</a></li>
+                                        <li><a href="#">city 2</a></li>
+                                        <li><a href="#">city 3</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    </div>
+
+                    <div class="white row-price">
+
+                        <div class="col-xs-6">
+                            <span class="price-description">Parcels found<br>for removal:</span>
+                                <span class="price-full">
+                                    <span class="price">433 </span> of 833
+                                </span>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <span class="price-description">Parcels remaining<br>after removal:</span>
+                                <span class="price-full">
+                                    <span class="price">400 </span> of 833
+                                </span>
+                        </div>
+                    </div>
+
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <div class="col-xs-4 modal-footer-links">
+                            <a href="#" class="clear">Clear all fields</a>
+                            <a href="#" class="custom-red-text">Restore list to its defaults</a>
+                        </div>
+
+                        <div class="col-xs-8">
+                            <div class="btn-group" role="group" aria-label="">
+                                <button type="button" class="btn icon-part custom-red">
+                                    <img class="add" src="img/eye-white.svg" onerror="this.onerror=null; this.src='eye-white.png'" alt="+">
+                                </button>
+
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn custom-red">Mark these properties as removed</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    </form>
+
+                    </div>
+                    </div>
+                    </div><!-- Modal 4 End -->
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+
+                <div class="btn-group" role="group" aria-label="">
+                    <button type="button" class="btn icon-part custom-grey-medium">
+                        <img class="add" src="img/picture-white.svg" onerror="this.onerror=null; this.src='picture-white.png'" alt="Request photos">
+                    </button>
+
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn custom-grey-medium"><a class="white-text" href="#">Photo requested</a></button>
+                    </div>
+                </div>
+
+                <div class="btn-group pull-right">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Export details
+                        <img class="caret-icon" src="img/caret.svg" onerror="this.onerror=null; this.src='caret.png'" alt="">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">details 1</a></li>
+                        <li><a href="#">details 2</a></li>
+                        <li><a href="#">details 3</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- VIEW -->
+
+        <div class="row views row-flex">
+            <div class="view col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <img class="visible-lg-block visible-md-block" src="img/map-view1_407x300.jpg" alt="view1">
+
+                <img class="hidden-md hidden-lg" src="img/map-view-748x300.jpg" alt="view1">
+
+                <div class="info-icon">
+                    <img class="" src="img/info-icon.png" alt="">
+                </div>
+                <div class="object"></div>
+                <div class="layers">
+                    <img class="" src="img/layers-btt.png" alt="">
+                </div>
+                <div class="zoom">
+                    <a href="#" class="plus">+</a>
+                    <div class="divider"></div>
+                    <a href="#" class="minus">-</a>
+                </div>
+            </div>
+
+
+            <div class="view col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="no-data">
+                    <p><img class="" src="img/help.svg" onerror="this.onerror=null; this.src='help.png'" alt=""> No data available for street view</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ADD PHOTO -->
+<div class="row add-photos">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="">
+            <div class="photo">
+                <img class="caret-icon" src="img/photo1_80.jpg" alt="photo1">
+            </div>
+
+            <div class="photo">
+                <img class="" src="img/photo2-80.jpg" alt="photo2">
+            </div>
+
+            <div class="photo">
+                <img class="" src="img/photo3_80.jpg" alt="photo3">
+            </div>
+
+            <div class="photo  hidden-sm">
+                <img class="" src="img/photo4_80.jpg" alt="photo4">
+            </div>
+
+            <div class="photo  hidden-sm">
+                <img class="" src="img/photo5_80.jpg" alt="photo5">
+            </div>
+
+            <div class="photo for-custom-container-only">
+                <img class="" src="img/photo6_80.jpg" alt="photo4">
+            </div>
+
+            <div class="add-photo first">
+                <img class="add-photo-icon" src="img/add-photo-icon.svg" onerror="this.onerror=null; this.src='add-photo-icon.png'" alt="+">
+                <span class="add-photo-text">Add photo</span>
+            </div>
+
+            <div class="add-photo">
+                <img class="picture" src="img/picture_17x13.svg" onerror="this.onerror=null; this.src='picture_17x13.png'" alt="">
+            </div>
+
+          <div class="add-photo">
+                <img class="picture" src="img/picture_17x13.svg" onerror="this.onerror=null; this.src='picture_17x13.png'" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</div><!-- ADD PHOTO End -->
+
+        <!-- NOTES -->
+        <div class="row notes visible-lg-inline-block visible-md-inline-block">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="custom-grey-light">
+                    <div class="row row-flex">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="note">
+                            <p>Praesent quis dui nec augue aliquet volutpat venenatis hendrerit eros. Integer imperdiet accumsan venenatis. Duis id leo et diam suscipit facilisis. Proin non risus neque. Duis suscipit ullamcorper diam quis bibendum. Curabitur purus augue, malesuada vel ullamcorper vel, congue eu justo.</p>
+                               <p class="last-p"> Vivamus vulputate, velit quis viverra molestie, diam arcu finibus dui.</p>
+                                <p class="save text-right"><a class="cancel" href="#">CANCEL</a> SAVE NOTE</p>
+                        </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="note">
+                                <p class="additional-note">Additional note</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- NOTES End -->
+
+        <!-- FOOTER for desktops  -->
+        <div class="row visible-lg  visible-md footer-desktop">
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <span>©2016 - <b>Automatic Tax Property Viewer</b> - All Rights Reserved</span>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <img class="" src="img/life-buoy.svg" onerror="this.onerror=null; this.src='life-buoy.png'" alt="">
+                <a class="support" href="#">CUSTOMER SUPPORT</a>
+                <span class="pull-right">Developed by <a href="index.html">NTData</a></span>
+            </div>
+        </div><!-- FOOTER for desktops End  -->
+
+    </div><!-- MAIN  End-->
+
+
+    <!-- SIDEBAR-->
+
+    <div class="sidebar custom-grey-light col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <div class="row">
+
+    <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6">
+        <table class="table">
+            <tr>
+                <td class="key">Parcel ID#</td>
+                <td class="value">460505205004000009</td>
+            </tr>
+
+            <tr>
+                <td class="key">Minimum Bid</td>
+                <td class="value">5000$</td>
+            </tr>
+
+            <tr>
+                <td class="key">Property Class</td>
+                <td class="value">RESIDENTIAL</td>
+            </tr>
+        </table>
+
+        <table class="table hidden-lg hidden-md">
+            <thead>
+            <tr>
+                <td>PARCEL LOCATION</td>
+                <td></td>
+            </tr>
+            </thead>
+            <tr>
+                <td class="key">Parcel Address</td>
+                <td class="value">324 CHESTNUT ST</td>
+            </tr>
+
+            <tr>
+                <td class="key">Parcel City</td>
+                <td class="value">MICHIGAN CITY</td>
+            </tr>
+
+            <tr>
+                <td class="key">Parcel State</td>
+                <td class="value">IN</td>
+            </tr>
+
+            <tr>
+                <td class="key">Parcel Zip</td>
+                <td class="value">46360</td>
+            </tr>
+
+            <tr>
+                <td class="key">Owner Name</td>
+                <td class="value">ALICE A HOYLE</td>
+            </tr>
+
+            <tr>
+                <td class="key">Owner Name 2</td>
+                <td class="value">--</td>
+            </tr>
+
+            <tr>
+                <td class="key">Owner Address</td>
+                <td class="value">431 OGDEN AVE</td>
+            </tr>
+
+            <tr>
+                <td class="key">Owner City</td>
+                <td class="value">MICHIGAN CITY</td>
+            </tr>
+
+            <tr>
+                <td class="key">Owner State</td>
+                <td class="value">IN</td>
+            </tr>
+
+            <tr>
+                <td class="key">Owner Zip</td>
+                <td class="value">46360</td>
+            </tr>
+
+            <tr>
+                <td class="key">GPS Coordinates</td>
+                <td class="value">41°24'12.2"N 2°10'26.5"E.</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6">
+        <table class="table">
+            <thead>
+            <tr>
+                <td>VALUE</td>
+                <td></td>
+            </tr>
+            </thead>
+            <tr>
+                <td class="key">Land Value</td>
+                <td class="value">9600.00$</td>
+            </tr>
+
+            <tr>
+                <td class="key">Improved Value</td>
+                <td class="value">33600.00$</td>
+            </tr>
+
+            <tr>
+                <td class="key">Total Value</td>
+                <td class="value">43200$</td>
+            </tr>
+        </table>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <td>SIZE</td>
+                <td></td>
+            </tr>
+            </thead>
+            <tr>
+                <td class="key">Land Acreage</td>
+                <td class="value">0.14</td>
+            </tr>
+
+            <tr>
+                <td class="key">Bldg Sq Ft</td>
+                <td class="value">1025</td>
+            </tr>
+        </table>
+
+
+        <table class="table visible-lg-block  visible-md-block">
+            <thead>
+            <tr>
+                <td>PARCEL LOCATION</td>
+                <td></td>
+            </tr>
+            </thead>
+            <tr>
+                <td class="key">Parcel Address</td>
+                <td class="value">324 CHESTNUT ST</td>
+            </tr>
+
+            <tr>
+                <td class="key">Parcel City</td>
+                <td class="value">MICHIGAN CITY</td>
+            </tr>
+
+            <tr>
+                <td class="key">Parcel State</td>
+                <td class="value">IN</td>
+            </tr>
+
+            <tr>
+                <td class="key">Parcel Zip</td>
+                <td class="value">46360</td>
+            </tr>
+
+            <tr>
+                <td class="key">Owner Name</td>
+                <td class="value">ALICE A HOYLE</td>
+            </tr>
+
+            <tr>
+                <td class="key">Owner Name 2</td>
+                <td class="value">--</td>
+            </tr>
+
+            <tr>
+                <td class="key">Owner Address</td>
+                <td class="value">431 OGDEN AVE</td>
+            </tr>
+
+            <tr>
+                <td class="key">Owner City</td>
+                <td class="value">MICHIGAN CITY</td>
+            </tr>
+
+            <tr>
+                <td class="key">Owner State</td>
+                <td class="value">IN</td>
+            </tr>
+
+            <tr>
+                <td class="key">Owner Zip</td>
+                <td class="value">46360</td>
+            </tr>
+
+            <tr>
+                <td class="key">GPS Coordinates</td>
+                <td class="value">41°24'12.2"N 2°10'26.5"E.</td>
+            </tr>
+        </table>
+
+
+        <table class="table">
+            <thead>
+            <tr>
+                <td>Other</td>
+                <td></td>
+            </tr>
+            </thead>
+            <tr>
+                <td class="key">Sale ID</td>
+                <td class="value">—</td>
+            </tr>
+
+            <tr>
+                <td class="key">Loan Amount</td>
+                <td class="value">0.00$</td>
+            </tr>
+
+            <tr>
+                <td class="key">Lender</td>
+                <td class="value">--</td>
+            </tr>
+
+            <tr>
+                <td class="key">Date Last Sold</td>
+                <td class="value">--</td>
+            </tr>
+
+            <tr>
+                <td class="key">Avm value</td>
+                <td class="value">67166$</td>
+            </tr>
+
+            <tr>
+                <td class="key">Delinq Tax Yeart</td>
+                <td class="value">0$</td>
+            </tr>
+
+            <tr>
+                <td class="key">Tax Amount</td>
+                <td class="value">864.00$</td>
+            </tr>
+        </table>
+
+    </div>
+
+    </div>
+    </div><!-- SIDEBAR End-->
+
+        </div>
+    </div>
+</section><!-- CONTENT BLOCK End -->
+
+
+<!-- FOOTER for tablets  -->
+<footer class="hidden-md hidden-lg">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <span>©2016 - <b>Automatic Tax Property Viewer</b> - All Rights Reserved</span>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <img class="" src="img/life-buoy.svg" onerror="this.onerror=null; this.src='life-buoy.png'" alt="">
+        <a class="support" href="#">CUSTOMER SUPPORT</a>
+        <span class="pull-right">Developed by <a href="index.html">NTData</a></span>
+    </div>
+</footer><!-- FOOTER for tablets End  -->
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
